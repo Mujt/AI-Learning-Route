@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="────────────────────&amp;#xa;场景&amp;#xa;方案分析&amp;#xa;────────────────────&amp;#xa;文章写作&amp;#xa;────────────────────&amp;#xa;代码编写&amp;#xa;────────────────────&amp;#xa;数据分析&amp;#xa;────────────────────&amp;#xa;PPT大纲&amp;#xa;────────────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="220" height="332" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="────────────────────────&amp;#xa;模糊Task&amp;#xa;&quot;帮我分析这个方案&quot;&amp;#xa;────────────────────────&amp;#xa;&quot;写一篇关于AI的文章&quot;&amp;#xa;────────────────────────&amp;#xa;&quot;写一个用户登录功能&quot;&amp;#xa;────────────────────────&amp;#xa;&quot;分析这份销售数据&quot;&amp;#xa;────────────────────────&amp;#xa;&quot;做个PPT&quot;&amp;#xa;────────────────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="270" y="20" width="220" height="332" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="────────────────────────┐&amp;#xa;精确Task&amp;#xa;&quot;从成本、工期、安全性三&amp;#xa;个维度评估方案，每维度给&amp;#xa;出0-5分评分、扣分原因、&amp;#xa;改进建议。用表格汇总。&quot;&amp;#xa;─────────────────────────&amp;#xa;&quot;写一篇面向中小企业CEO的&amp;#xa;800字文章。主题：AI落地&amp;#xa;的5个关键决策。结构：引&amp;#xa;言(100字)+5个决策各&amp;#xa;(120字)+结论(100字)。&quot;&amp;#xa;─────────────────────────&amp;#xa;&quot;用PythonFastAPI实现&amp;#xa;登录接口：接收JSON&amp;#xa;{username,password}，&amp;#xa;返回JWTtoken。处理&amp;#xa;场景：成功/密码错误/&amp;#xa;用户不存在/账户锁定。&quot;&amp;#xa;─────────────────────────&amp;#xa;&quot;分析2025年Q1-Q4的销售&amp;#xa;数据，找出：1)季度增长&amp;#xa;趋势2)Top3增长品类&amp;#xa;3)异常波动月份4)下季度&amp;#xa;预测。每项用图表建议+&amp;#xa;文字解读。&quot;&amp;#xa;─────────────────────────&amp;#xa;&quot;生成10页季度汇报PPT大纲&amp;#xa;：每页含标题+3个要点+&amp;#xa;建议图表类型。顺序：&amp;#xa;封面→摘要→业绩→问题→&amp;#xa;竞品→计划→团队→预算→&amp;#xa;风险→总结。&quot;&amp;#xa;────────────────────────┘" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="520" y="20" width="220" height="904" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="┌───────────────────────────────────────────────────────────────────┐
+│               团队 AI 开发环境标准化成熟度                          │
+├───────────────────────────────────────────────────────────────────┤
+│                                                                   │
+│  Level 3: 企业级管理                                              │
+│  ┌───────────────────────────────────────────────────────────┐   │
+│  │ • 统一 API Key 管理（密钥轮换、用量监控、预算告警）         │   │
+│  │ • 代码审查集成（AI 生成代码必须经过 Code Review）           │   │
+│  │ • 内部 Prompt 库（团队共享的 RCTE 模板）                    │   │
+│  │ • 安全策略（禁止向 AI 发送的敏感信息清单）                  │   │
+│  │ • 用量分析（按团队/项目/人员维度的 API 用量报告）           │   │
+│  └───────────────────────────────────────────────────────────┘   │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="500" height="332" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="│  Level 2: 团队标准化                                              │
+│  ┌───────────────────────────────────────────────────────────┐   │
+│  │ • 统一开发环境配置（VSCode + 指定插件清单）                 │   │
+│  │ • 统一 AI 工具选型（主力模型 + 备份模型）                   │   │
+│  │ • 新人入职 30 分钟上手（一键配置脚本）                      │   │
+│  │ • 团队共享的 .vscode/settings.json 和插件推荐文件           │   │
+│  └───────────────────────────────────────────────────────────┘   │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="392" width="500" height="202" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="│  Level 1: 个人使用                                                │
+│  ┌───────────────────────────────────────────────────────────┐   │
+│  │ • 各成员自行安装使用                                         │   │
+│  │ • 无统一配置标准                                             │   │
+│  │ • API Key 个人管理                                           │   │
+│  └───────────────────────────────────────────────────────────┘   │
+│                                                                   │
+└───────────────────────────────────────────────────────────────────┘" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="634" width="500" height="228" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="3" target="5">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

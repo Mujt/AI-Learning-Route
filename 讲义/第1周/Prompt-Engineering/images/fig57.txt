@@ -1,0 +1,13 @@
+VSCode → 左下角齿轮图标 → Settings → 搜索以下设置项：
+
+┌────────────────────────────────────────────────────────────┐
+│ 设置项                          │ 推荐值      │ 原因        │
+├─────────────────────────────────┼────────────┼─────────────┤
+│ Editor: Font Size               │ 14-16       │ 舒适阅读    │
+│ Editor: Tab Size                │ 4           │ Python 标准 │
+│ Editor: Render Whitespace       │ boundary    │ 便于发现缩进│
+│                                     │ 错误        │
+│ Files: Auto Save                │ afterDelay  │ 防止丢失    │
+│ Terminal: Integrated Font Size  │ 13-14       │ 终端可读性  │
+│ Editor: Minimap                 │ off (可选)  │ 减少干扰    │
+└────────────────────────────────────────────────────────────┘

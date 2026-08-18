@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="模型推理过程（简化）：
+
+输入 Prompt: &quot;人工智能的未来&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="500" height="98" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="Token 化: [人工, 智能, 的, 未来]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="158" width="500" height="50" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="模型计算: P(下一个Token | [人工, 智能, 的, 未来])
+         = 基于海量训练数据的条件概率分布" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="248" width="500" height="72" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="3" target="5">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="7" value="采样输出: &quot;将会&quot; (概率最高) / &quot;充满&quot; (次高) / ..." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="360" width="500" height="50" as="geometry" />
+      </mxCell>
+        <mxCell id="8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="5" target="7">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="9" value="继续: P(下一个Token | [人工, 智能, 的, 未来, 将会])" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="450" width="500" height="50" as="geometry" />
+      </mxCell>
+        <mxCell id="10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="7" target="9">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="11" value="... 逐 Token 生成，直到遇到终止符" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="540" width="500" height="50" as="geometry" />
+      </mxCell>
+        <mxCell id="12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="9" target="11">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

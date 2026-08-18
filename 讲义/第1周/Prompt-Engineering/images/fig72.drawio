@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="┌──────────────┐     自然语言 Prompt       ┌──────────────┐     生成的 SQL       ┌──────────────┐" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="500" height="50" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="│              │     结果解读 + SQL 说明     │  DeepSeek)   │    查询结果数据       │              │
+└──────────────┘                           └──────────────┘                     └──────┬───────┘
+                                                                                       │
+                                                                        ┌──────────────┘
+                                                                        │
+                                                            ┌───────────┴───────────┐
+                                                            │     权限隔离设计        │
+                                                            │                        │
+                                                            │  ┌─────────────────┐   │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="110" width="500" height="254" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="│  │  (日常查询用)     │   │    最安全，默认使用
+                                                            │  └─────────────────┘   │
+                                                            │  ┌─────────────────┐   │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="404" width="500" height="98" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="3" target="5">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="7" value="│  │  (确认后使用)     │   │    UPDATE / DELETE
+                                                            │  └─────────────────┘   │
+                                                            │  ┌─────────────────┐   │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="542" width="500" height="98" as="geometry" />
+      </mxCell>
+        <mxCell id="8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="5" target="7">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="9" value="│  │  (仅DBA持有)      │   │    绝不交给 AI
+                                                            │  └─────────────────┘   │
+                                                            └────────────────────────┘" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="680" width="500" height="98" as="geometry" />
+      </mxCell>
+        <mxCell id="10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="7" target="9">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

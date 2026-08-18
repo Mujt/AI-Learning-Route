@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="LangGraph Checkpointer API:
+
+┌───────────────────────────────────────────────────────────────┐
+│                                                               │
+│  初始化：                                                       │
+│  from langgraph.checkpoint.postgres import PostgresSaver      │
+│  checkpointer = PostgresSaver(conn_string)                     │
+│  graph = builder.compile(checkpointer=checkpointer)            │
+│                                                               │
+│  配置执行线程：                                                  │
+│  config = {&quot;configurable&quot;: {&quot;thread_id&quot;: &quot;task-001&quot;}}         │
+│                                                               │
+│  首次执行：                                                     │
+│  for event in graph.stream(                                    │
+│      {&quot;messages&quot;: [user_message]},                             │
+│      config                                                    │
+│  ):                                                           │
+│      # 每个 event 对应一个 Checkpoint 被保存                    │
+│                                                               │
+│  # 如果在此处崩溃/暂停...                                       │
+│                                                               │
+│  恢复执行：                                                     │
+│  # 不需要重新传 user_message，Checkpointer 知道上次执行到哪了    │
+│  for event in graph.stream(                                    │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="500" height="644" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="│      config                                                   │
+│  ):                                                           │
+│      # 自动从最近的 Checkpoint 继续                             │
+│                                                               │
+│  查看历史：                                                     │
+│  history = list(graph.get_state_history(config))               │
+│  # 按时间倒序返回所有 Checkpoint                                │
+│  # 可回溯到任意历史 Checkpoint 并重新执行                        │
+│                                                               │
+└───────────────────────────────────────────────────────────────┘" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="704" width="500" height="280" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

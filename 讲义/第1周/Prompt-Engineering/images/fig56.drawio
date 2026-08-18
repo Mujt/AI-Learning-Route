@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Cline 不是普通的&quot;聊天插件&quot;，它是一个在 IDE 中运行的完整 Agent：" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="0" width="756" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="┌──────────────────────────────────────────────────────────┐" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="60" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="Cline Agent 架构（简化）" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="90" width="744" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="120" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="用户输入 Prompt" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="150" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="7" value="" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="180" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="8" value="▼" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="210" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="9" value="┌────────────────────────────────────────┐" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="240" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="10" value="Cline Agent Loop" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="270" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="11" value="" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="300" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="12" value="┌─────────────────────────┐" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="330" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="13" value="1. 分析用户意图" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="360" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="14" value="└─ 拆解任务" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="390" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="15" value="├─────────────────────────┤" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="420" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="16" value="2. 读取项目上下文" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="450" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="17" value="└─ 读取文件树/打开文件" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="480" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="18" value="├─────────────────────────┤" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="510" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="19" value="3. 规划执行策略" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="540" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="20" value="└─ 判断需要哪些工具" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="570" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="21" value="├─────────────────────────┤" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="600" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="22" value="4. 执行动作" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="630" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="23" value="├─ 写入文件" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="660" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="24" value="├─ 执行终端命令" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="690" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="25" value="└─ 搜索/替换代码" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="720" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="26" value="├─────────────────────────┤" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="750" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="27" value="5. 检查结果" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="780" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="28" value="└─ 读取输出/检查错误" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="810" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="29" value="├─────────────────────────┤" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="840" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="30" value="6. 迭代（回到步骤2）" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="870" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="31" value="直到任务完成" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="900" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="32" value="└─────────────────────────┘" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="930" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="33" value="" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="960" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="34" value="权限模型（四级）：" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="990" width="756" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="35" value="Allow  ─ 允许（自动执行）" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1020" width="744" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="36" value="Ask    ─ 每次询问用户" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1050" width="744" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="37" value="Deny   ─ 拒绝（永不执行）" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1080" width="744" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="38" value="AskOnce─ 本次会话仅询问一次" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1110" width="756" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="39" value="└────────────────────────────────────────┘" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1140" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="40" value="" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1170" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="41" value="└──────────────────────────────────────────────────────────┘" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1200" width="720" height="34" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

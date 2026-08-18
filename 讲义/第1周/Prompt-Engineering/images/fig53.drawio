@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="┌─────────────────────────────────────────────────────────────────────┐
+│                    企业 Prompt 标准化成熟度模型                        │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  Level 3: Prompt 资产管理                                            │
+│  ┌──────────────────────────────────────────────────────────────┐   │
+│  │ • 集中式 Prompt 库（Git 仓库 / 内部平台）                       │   │
+│  │ • Prompt 版本控制（变更历史、A/B 测试结果）                     │   │
+│  │ • 效果度量（每个 Prompt 模板的准确率、用户满意度、Token 成本）  │   │
+│  │ • 跨部门复用（法务/客服/市场共享 Prompt 资产）                  │   │
+│  └──────────────────────────────────────────────────────────────┘   │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="500" height="306" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="│  Level 2: Prompt 标准化                                              │
+│  ┌──────────────────────────────────────────────────────────────┐   │
+│  │ • 高频场景建立 RCTE 标准模板                                   │   │
+│  │ • 新人入职 Prompt 培训（30分钟即可上手）                       │   │
+│  │ • 部门级 Prompt 审核流程                                       │   │
+│  └──────────────────────────────────────────────────────────────┘   │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="366" width="500" height="176" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="│  Level 1: 个人实践                                                   │
+│  ┌──────────────────────────────────────────────────────────────┐   │
+│  │ • 个人学习 Prompt Engineering 技巧                             │   │
+│  │ • 在工作中开始使用 AI 工具                                      │   │
+│  │ • 积累个人的 Prompt 经验                                        │   │
+│  └──────────────────────────────────────────────────────────────┘   │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="582" width="500" height="228" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="3" target="5">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

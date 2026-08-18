@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="方式一：GUI 安装（推荐）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="500" height="50" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="方式二：命令行安装
+  code --install-extension saoudrizwan.claude-dev
+  code --install-extension Continue.continue
+  code --install-extension ms-python.python
+  code --install-extension GitHub.copilot
+  code --install-extension esbenp.prettier-vscode
+
+方式三：批量安装
+  将以下内容保存为 install-extensions.sh：
+  #!/bin/bash
+  extensions=(
+    &quot;saoudrizwan.claude-dev&quot;
+    &quot;Continue.continue&quot;
+    &quot;ms-python.python&quot;
+    &quot;GitHub.copilot&quot;
+    &quot;esbenp.prettier-vscode&quot;
+  )
+  for ext in &quot;${extensions[@]}&quot;; do
+    code --install-extension &quot;$ext&quot;
+  done" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="110" width="500" height="540" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

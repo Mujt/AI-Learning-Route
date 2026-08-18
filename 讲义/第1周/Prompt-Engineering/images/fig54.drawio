@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="┌─────────────────────────────────────────────────────────────────┐" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="0" width="804" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="企业 Prompt 设计中的安全红线（必须遵守）" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="30" width="840" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="├─────────────────────────────────────────────────────────────────┤" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="60" width="804" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="90" width="804" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="1. 禁止在 Prompt 中硬编码 API Key / 密码 / 连接串" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="120" width="816" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="7" value="正确做法：使用环境变量或密钥管理服务" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="150" width="840" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="8" value="" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="180" width="804" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="9" value="2. 禁止在 Prompt 中粘贴完整客户数据" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="210" width="828" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="10" value="正确做法：脱敏处理，或在本地 RAG 管道中检索后注入" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="240" width="840" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="11" value="" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="270" width="804" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="12" value="3. 涉及法律/财务/医疗建议的 Prompt 必须包含免责声明" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="300" width="828" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="13" value="正确做法：在 System Prompt 中固定加入合规声明" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="330" width="840" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="14" value="" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="360" width="804" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="15" value="4. 对外服务的 Prompt 必须设置输入和输出的安全过滤" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="390" width="816" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="16" value="正确做法：Prompt Injection 检测 + 输出内容审核" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="420" width="840" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="17" value="" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="450" width="804" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="18" value="5. Prompt 模板的修改必须有审批流程" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="480" width="828" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="19" value="正确做法：Git PR 审批 + 测试环境验证通过后上线" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="510" width="828" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="20" value="" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="540" width="804" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="21" value="└─────────────────────────────────────────────────────────────────┘" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="570" width="804" height="34" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

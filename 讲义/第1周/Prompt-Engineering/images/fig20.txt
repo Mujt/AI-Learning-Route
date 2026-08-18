@@ -1,0 +1,19 @@
+一次 Agent 执行的完整 Trace：
+
+Trace ID: abc123-def456-ghi789
+├── Span: Agent.Run (duration: 45.2s)
+│   ├── Span: LLM.Think (step=1, tokens_in=3200, tokens_out=150, duration: 2.1s)
+│   ├── Span: Tool.Call (name="read_file", params={path:"..."}, permission=Allow)
+│   │   └── Span: Tool.Execute (duration: 0.3s, result_size: 1200 bytes)
+│   ├── Span: LLM.Think (step=2, tokens_in=4500, tokens_out=80, duration: 1.8s)
+│   ├── Span: Tool.Call (name="edit_file", params={...}, permission=Ask→Approved)
+│   │   └── Span: Tool.Execute (duration: 0.1s, result: success)
+│   ├── Span: LLM.Think (step=3, tokens_in=4800, tokens_out=200, duration: 2.5s)
+│   └── Span: Agent.Complete (total_steps=3, total_tokens=12930, total_cost=$0.04)
+│
+└── Metadata:
+    session_id: sess-xyz
+    model: claude-sonnet-4-20250514
+    tools_used: [read_file, edit_file]
+    permission_decisions: {Allow: 1, Ask: 1}
+    compaction_events: 0

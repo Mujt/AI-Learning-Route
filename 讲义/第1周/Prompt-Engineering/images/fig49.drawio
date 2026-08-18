@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="【优化前】" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="0" width="120" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="Prompt: &quot;分析这些用户反馈，提取关键信息&quot;" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="30" width="480" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="输出：一段混合了所有信息的自然语言段落，无法程序化处理。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="60" width="696" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="───────────────────────────────────────────────────────────" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="120" width="708" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="【优化后】" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="180" width="120" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="7" value="Prompt: &quot;分析以下用户反馈，提取关键信息，以严格合法的JSON格式输出。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="210" width="804" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="8" value="{" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="240" width="100" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="9" value="&apos;sentiment&apos;: &apos;positive&apos; | &apos;negative&apos; | &apos;neutral&apos;," style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="270" width="612" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="10" value="&apos;topics&apos;: [&apos;主题1&apos;, &apos;主题2&apos;]," style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="300" width="372" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="11" value="&apos;urgency&apos;: &apos;low&apos; | &apos;medium&apos; | &apos;high&apos;," style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="330" width="468" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="12" value="&apos;actionable_items&apos;: [" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="360" width="276" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="13" value="{&apos;item&apos;: &apos;具体问题&apos;, &apos;suggested_action&apos;: &apos;建议措施&apos;, &apos;priority&apos;: 1-5}" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="390" width="876" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="14" value="]," style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="420" width="100" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="15" value="&apos;summary&apos;: &apos;30字以内总结&apos;" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="450" width="324" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="16" value="}" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="480" width="100" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="17" value="只输出JSON，不要有其他文字。&quot;" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="510" width="348" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="18" value="效果：输出可直接被下游程序解析，进入自动化处理流水线。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="570" width="648" height="34" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,8 @@
+模型内部机制（简化）：
+
+输入 Token 序列 → Embedding → Transformer Layers → 
+Softmax 概率分布（词汇表中每个 Token 的概率）→ 采样 → 输出 Token
+
+Prompt 的约束作用发生在输入端：
+  - 差的 Prompt → 概率分布在广泛的语义空间上分散 → 输出不可控
+  - 好的 Prompt → 概率分布集中在目标语义空间 → 输出可预期

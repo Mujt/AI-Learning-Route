@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="═══════════════════════════════════════════════════════════
+模板名称：代码生成 Prompt 模板
+═══════════════════════════════════════════════════════════
+
+Role:
+  你是一位资深 [编程语言] [后端/前端/全栈/算法] 工程师，
+  在 [具体领域] 有 [年限] 年开发经验，
+  代码审查标准参照 [行业标准/公司规范]。
+
+Context:
+  - 项目技术栈：[框架/数据库/部署环境]
+  - 代码风格：[PEP 8 / Google Style / Airbnb Style]
+  - 依赖限制：[可用/禁用的第三方库]
+  - 兼容性要求：[浏览器版本/OS/运行时版本]
+
+Task:
+  实现 [功能描述]，具体要求：" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="500" height="462" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="2. 性能层面：[时间复杂度 / 并发处理 / 内存限制]
+  3. 安全层面：[输入校验 / SQL注入防范 / XSS防护]
+  4. 异常处理：[空值/超时/网络错误/权限不足] 每种情况都要处理
+  5. 代码注释：[中文/英文]，覆盖关键逻辑
+
+Example:" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="522" width="500" height="176" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

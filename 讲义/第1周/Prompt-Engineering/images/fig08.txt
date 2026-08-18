@@ -1,0 +1,13 @@
+Prompt Engineering vs Context Engineering：
+
+Prompt Engineering 关心的:
+  "System Prompt 写什么？"
+  → 一个方块的优化
+
+Context Engineering 关心的:
+  "模型在每一步推理时能'看到'的全部信息是什么？"
+  → 整个信息环境的设计
+
+升级的本质：
+  Prompt  →  指令怎么写
+  Context →  信息怎么组织、怎么管理、怎么在有限窗口内最大化价值

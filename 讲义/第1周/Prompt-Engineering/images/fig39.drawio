@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="────────────────────&amp;#xa;任务：分析一家咖啡店&amp;#xa;不设定角色&amp;#xa;────────────────────&amp;#xa;输出特征：&amp;#xa;•通用建议&amp;#xa;•浅层分析&amp;#xa;•无数据框架&amp;#xa;&quot;可以考虑提升&amp;#xa;服务质量&quot;&amp;#xa;────────────────────&amp;#xa;适用场景&amp;#xa;不适合场景&amp;#xa;────────────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="220" height="384" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="────────────────────&amp;#xa;的经营问题并提出改善&amp;#xa;│&quot;你是一位资深连锁&amp;#xa;餐饮行业顾问&quot;&amp;#xa;────────────────────&amp;#xa;│输出特征：&amp;#xa;│•行业术语精准&amp;#xa;│•涉及供应链/坪效&amp;#xa;│•竞品对比&amp;#xa;│&quot;建议优化SKU组合&amp;#xa;│将坪效从2000提升&amp;#xa;至3500元/平米&quot;&amp;#xa;────────────────────&amp;#xa;│行业深度分析&amp;#xa;│所有需要专业输出的&amp;#xa;场景&amp;#xa;────────────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="270" y="20" width="220" height="462" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="──────────────────────────┐&amp;#xa;案&amp;#xa;│&quot;你是一位麦肯锡咨询顾问&amp;#xa;│&amp;#xa;───────────────────────────&amp;#xa;│输出特征：&amp;#xa;│•结构化分析框架&amp;#xa;│•MECE分解&amp;#xa;│•&quot;以数据为导向&quot;&amp;#xa;│&quot;基于五力模型分析，&amp;#xa;│当前竞争格局呈现...&amp;#xa;│&amp;#xa;───────────────────────────&amp;#xa;│高层战略决策&amp;#xa;│需要细粒度技术方案时&amp;#xa;│&amp;#xa;───────────────────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="520" y="20" width="220" height="462" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

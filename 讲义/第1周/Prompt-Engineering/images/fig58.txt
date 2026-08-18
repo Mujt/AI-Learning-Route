@@ -1,0 +1,24 @@
+方式一：GUI 安装（推荐）
+  VSCode 左侧边栏 → Extensions 图标（或 Ctrl+Shift+X）
+  → 搜索框输入插件名称 → 点击 Install
+
+方式二：命令行安装
+  code --install-extension saoudrizwan.claude-dev
+  code --install-extension Continue.continue
+  code --install-extension ms-python.python
+  code --install-extension GitHub.copilot
+  code --install-extension esbenp.prettier-vscode
+
+方式三：批量安装
+  将以下内容保存为 install-extensions.sh：
+  #!/bin/bash
+  extensions=(
+    "saoudrizwan.claude-dev"
+    "Continue.continue"
+    "ms-python.python"
+    "GitHub.copilot"
+    "esbenp.prettier-vscode"
+  )
+  for ext in "${extensions[@]}"; do
+    code --install-extension "$ext"
+  done

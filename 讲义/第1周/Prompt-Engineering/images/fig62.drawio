@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="───────────────────────&amp;#xa;任务类型&amp;#xa;日常代码编写/修改&amp;#xa;代码审查/重构&amp;#xa;复杂Debug（多文件）&amp;#xa;系统架构设计&amp;#xa;简单脚本生成&amp;#xa;文档撰写/翻译&amp;#xa;批量小任务(&gt;50次/天)&amp;#xa;学习/实验/初期探索&amp;#xa;───────────────────────&amp;#xa;格参考（2026年8月，以&amp;#xa;-ClaudeSonnet5:~$3&amp;#xa;-ClaudeOpus5:~$1&amp;#xa;-典型编码对话单次消耗" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="220" height="410" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="─────────────────────&amp;#xa;推荐Model&amp;#xa;Sonnet5&amp;#xa;Sonnet5&amp;#xa;Opus5&amp;#xa;Opus5&amp;#xa;Sonnet5&amp;#xa;Sonnet5&amp;#xa;Sonnet5+DeepSeek&amp;#xa;Sonnet5&amp;#xa;─────────────────────&amp;#xa;nthropic官网为准）：&amp;#xa;百万输入Token,~$15/&amp;#xa;/百万输入Token,~$75&amp;#xa;5K~50KToken" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="270" y="20" width="220" height="410" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="──────────────────────┐&amp;#xa;原因&amp;#xa;速度快、成本适中&amp;#xa;质量足够，无需Opus&amp;#xa;需要最强推理能力&amp;#xa;需要深度思考&amp;#xa;速度快、成本低&amp;#xa;性能完全足够&amp;#xa;控制成本&amp;#xa;性价比最佳入门选择&amp;#xa;──────────────────────┘&amp;#xa;万输出Token&amp;#xa;百万输出Token" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="520" y="20" width="220" height="358" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

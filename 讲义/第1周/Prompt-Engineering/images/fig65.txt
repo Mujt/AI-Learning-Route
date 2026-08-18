@@ -1,0 +1,9 @@
+步骤清单（按顺序执行）：
+
+□ 1. 确认 VSCode 已安装且能正常启动
+□ 2. 安装 Cline 插件（VSCode → Extensions → 搜索 "Cline" → Install）
+□ 3. 注册 Anthropic 账号，获取 Claude API Key
+□ 4. 注册 DeepSeek 开发者账号，获取 DeepSeek API Key
+□ 5. 在 Cline 中分别配置 Claude 和 DeepSeek 两个 API Provider
+□ 6. 将默认 Provider 设为 Claude（质量优先）或 DeepSeek（成本优先）
+□ 7. 发送第一个 Prompt 测试（见第 8 节）

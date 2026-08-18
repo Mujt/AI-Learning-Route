@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="────────────────────&amp;#xa;ContextW&amp;#xa;模型每一步&amp;#xa;────────────────────&amp;#xa;SystemPrompt&amp;#xa;系统指令层&amp;#xa;·角色定义&amp;#xa;·安全规则&amp;#xa;·输出格式约束&amp;#xa;·禁止行为清单&amp;#xa;~2KToken&amp;#xa;────────────────────&amp;#xa;────────────────────&amp;#xa;ToolDefinitions&amp;#xa;工具定义层&amp;#xa;·工具名称&amp;#xa;·功能描述&amp;#xa;·参数Schema&amp;#xa;·返回格式&amp;#xa;~2-10KToken&amp;#xa;────────────────────&amp;#xa;────────────────────&amp;#xa;MemoryRetrieval&amp;#xa;记忆提取层&amp;#xa;·用户偏好记忆&amp;#xa;·历史决策记录&amp;#xa;·任务上下文&amp;#xa;~1-5KToken&amp;#xa;────────────────────&amp;#xa;────────────────────&amp;#xa;题：当Agent运行5&amp;#xa;对话历史可能占用&amp;#xa;决：ContextEnginee&amp;#xa;────────────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="220" height="904" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="────────────────────&amp;#xa;w(200KToken)&amp;#xa;时能&quot;看到&quot;的全部信息&amp;#xa;────────────────────&amp;#xa;Conversation&amp;#xa;│History&amp;#xa;对话历史层&amp;#xa;│&amp;#xa;│·用户消息序列&amp;#xa;│·AI回复序列&amp;#xa;│·工具调用记录&amp;#xa;·工具输出记录&amp;#xa;~5-50KToken&amp;#xa;────────────────────&amp;#xa;────────────────────&amp;#xa;RetrievedContext&amp;#xa;│检索增强层&amp;#xa;│·RAG检索结果&amp;#xa;│·知识库片段&amp;#xa;·相关文档&amp;#xa;│·数据摘要&amp;#xa;~3-10KToken&amp;#xa;────────────────────&amp;#xa;────────────────────&amp;#xa;Structured&amp;#xa;│Instructions&amp;#xa;结构化指令层&amp;#xa;│&amp;#xa;│·XML/MD分层标签&amp;#xa;│·优先级标记&amp;#xa;·输出Schema&amp;#xa;~1KToken&amp;#xa;────────────────────&amp;#xa;────────────────────&amp;#xa;对话+100次工具调用&amp;#xa;0K+Token，还剩下多少&amp;#xa;的三大核心策略&amp;#xa;────────────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="270" y="20" width="220" height="1008" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

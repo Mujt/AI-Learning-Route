@@ -1,0 +1,35 @@
+LangGraph Checkpointer API:
+
+┌───────────────────────────────────────────────────────────────┐
+│                                                               │
+│  初始化：                                                       │
+│  from langgraph.checkpoint.postgres import PostgresSaver      │
+│  checkpointer = PostgresSaver(conn_string)                     │
+│  graph = builder.compile(checkpointer=checkpointer)            │
+│                                                               │
+│  配置执行线程：                                                  │
+│  config = {"configurable": {"thread_id": "task-001"}}         │
+│                                                               │
+│  首次执行：                                                     │
+│  for event in graph.stream(                                    │
+│      {"messages": [user_message]},                             │
+│      config                                                    │
+│  ):                                                           │
+│      # 每个 event 对应一个 Checkpoint 被保存                    │
+│                                                               │
+│  # 如果在此处崩溃/暂停...                                       │
+│                                                               │
+│  恢复执行：                                                     │
+│  # 不需要重新传 user_message，Checkpointer 知道上次执行到哪了    │
+│  for event in graph.stream(                                    │
+│      None,                     # ← 传入 None!                 │
+│      config                                                   │
+│  ):                                                           │
+│      # 自动从最近的 Checkpoint 继续                             │
+│                                                               │
+│  查看历史：                                                     │
+│  history = list(graph.get_state_history(config))               │
+│  # 按时间倒序返回所有 Checkpoint                                │
+│  # 可回溯到任意历史 Checkpoint 并重新执行                        │
+│                                                               │
+└───────────────────────────────────────────────────────────────┘

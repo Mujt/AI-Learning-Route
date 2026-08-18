@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="【优化前】" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="0" width="120" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="Prompt: &quot;帮我写一段内部控制制度&quot;" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="30" width="384" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="输出：通用模板式的制度文本。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="90" width="336" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="───────────────────────────────────────────────────────────" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="150" width="708" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="【优化后】" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="210" width="120" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="7" value="Prompt: &quot;你是一位有15年经验的四大会计师事务所风险管理合伙人，" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="240" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="8" value="专门为上市公司设计内部控制体系。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="270" width="408" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="9" value="请帮我写一段关于&apos;采购付款审批流程&apos;的内部控制制度。&quot;" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="300" width="636" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="10" value="输出：包含COSO框架引用、职责分离原则、审批阈值设计、" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="360" width="624" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="11" value="反欺诈措施等专业内容。远超通用模板的深度和实操性。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="390" width="660" height="34" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

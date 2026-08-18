@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1974" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="═══════════════════════════════════════════════════════════════════════════" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="0" width="900" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="【无 Prompt（纯续写模式）】" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="60" width="324" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="输入：" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="90" width="100" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="&quot;人工智能的未来&quot;" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="120" width="240" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="模型行为：" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="180" width="144" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="7" value="模型将此视为一段未完成文本的开头，按照训练语料的统计规律续写。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="210" width="792" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="8" value="输出方向完全由模型训练数据中的最常见后续决定，用户无控制权。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="240" width="768" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="9" value="实际输出示例：" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="300" width="192" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="10" value="&quot;人工智能的未来将会非常美好，人类将与机器和谐共处，" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="330" width="660" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="11" value="共同创造一个前所未有的文明时代。在这个时代中，智能机器" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="360" width="708" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="12" value="将成为人类最忠实的伙伴...&quot;" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="390" width="372" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="13" value="问题分析：" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="450" width="144" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="14" value="- 输出方向不可控（泛泛而谈的未来畅想）" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="480" width="504" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="15" value="- 长度不可控（可能 50 字也可能 5000 字）" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="510" width="528" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="16" value="- 格式不可控（散文式叙述）" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="540" width="360" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="17" value="- 深度不可控（停留在表面论述）" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="570" width="408" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="18" value="───────────────────────────────────────────────────────────────────────────" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="630" width="900" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="19" value="【有 Prompt（精确引导模式）】" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="690" width="348" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="20" value="输入：" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="720" width="100" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="21" value="&quot;请用 200 字，从技术、商业、社会三个维度分析人工智能的未来发展趋势。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="750" width="864" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="22" value="每个维度分两段：现状（1句）和 3 年内预测（2句）。用数字序号标注。&quot;" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="780" width="852" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="23" value="模型行为：" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="840" width="144" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="24" value="Prompt 中的约束（字数、维度、结构、格式）大幅缩小了模型在" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="870" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="25" value="每个预测位置的合理 Token 选择范围。模型被&quot;强制&quot;沿着用户" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="900" width="708" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="26" value="规划的方向续写。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="930" width="240" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="27" value="实际输出示例：" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="990" width="192" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="28" value="1. 技术维度" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1020" width="180" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="29" value="现状：当前大模型在推理能力和多模态融合方面持续突破，" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1050" width="708" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="30" value="但幻觉问题和推理成本仍是核心瓶颈。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1080" width="552" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="31" value="预测：未来3年，模型参数效率将提升10倍以上，通过MoE架构" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1110" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="32" value="和知识蒸馏实现端侧部署；Agent自主编程能力将达到" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1140" width="708" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="33" value="中级工程师水平，但完全自主仍需人工监督。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1170" width="624" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="34" value="2. 商业维度" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1230" width="180" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="35" value="现状：AI应用正从&quot;Copilot辅助&quot;向&quot;Agent自主执行&quot;过渡，" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1260" width="708" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="36" value="SaaS行业面临根本性重构。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1290" width="432" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="37" value="预测：每家企业将拥有至少3个专职AI Agent处理客服、数据" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1320" width="720" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="38" value="分析和代码审查；按Token付费的AI成本模型将向按任务" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1350" width="732" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="39" value="价值定价迁移。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1380" width="312" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="40" value="3. 社会维度" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1440" width="180" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="41" value="现状：AI素养差距成为新的社会不平等来源，各国监管框架" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1470" width="708" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="42" value="仍在追赶技术发展速度。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1500" width="396" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="43" value="预测：AI技能将从&quot;竞争优势&quot;转变为&quot;基础就业门槛&quot;；" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1530" width="660" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="44" value="AI生成内容的标识和水印将成为法律强制要求。" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1560" width="648" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="45" value="对比分析：" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1620" width="144" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="46" value="- 输出方向精确可控（技术/商业/社会三维）" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1650" width="528" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="47" value="- 长度精确（约200字）" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1680" width="300" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="48" value="- 结构规整（编号 + 两段式）" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1710" width="372" height="34" as="geometry" />
+      </mxCell>
+        <mxCell id="49" value="- 深度可控（现状 + 预测）" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;" vertex="1" parent="1">
+        <mxGeometry x="10" y="1740" width="348" height="34" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

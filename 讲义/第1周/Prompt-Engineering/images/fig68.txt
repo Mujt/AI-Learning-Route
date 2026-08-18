@@ -1,0 +1,15 @@
+1. 浏览器打开 https://workbuddy.ai
+2. 下载对应系统的桌面应用安装包
+3. 安装后启动 → 进入 Settings → API Configuration
+4. 填入 API 信息：
+   - DeepSeek API Key（推荐，国内可用，低成本）
+   - 或 Claude API Key
+5. 选择默认模型
+6. 配置权限：WorkBuddy 需要授予屏幕录制/辅助功能等系统权限
+   （macOS: System Preferences → Privacy & Security → Accessibility）
+
+适用场景示例：
+  - "帮我整理桌面上的文件，按项目分类到不同文件夹"
+  - "读取当前网页内容，总结为3个要点"
+  - "帮我回复这封邮件，语气专业但友好"
+  - "搜索本地文档中所有提到'Q3预算'的文件"

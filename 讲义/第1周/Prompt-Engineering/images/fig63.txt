@@ -1,0 +1,16 @@
+VSCode → Cline 面板 → 齿轮图标 → 配置界面：
+
+┌─────────────────────────────────────────────────────┐
+│ API Provider:     OpenAI Compatible                  │
+│                                                     │
+│ Base URL:         https://api.deepseek.com          │
+│                                                     │
+│ API Key:          sk-xxxxxxxxxxxxxxxxxxxxxxxx        │
+│                   (粘贴你的 DeepSeek API Key)         │
+│                                                     │
+│ Model ID:         deepseek-chat                      │
+│                   (通用对话模型)                      │
+│                                                     │
+│ Alternative:      deepseek-reasoner                  │
+│                   (深度推理模型，数学/逻辑任务)       │
+└─────────────────────────────────────────────────────┘

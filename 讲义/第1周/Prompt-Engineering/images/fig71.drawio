@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="═════════════════════&amp;#xa;═════════════════════&amp;#xa;PIKey管理：&amp;#xa;□使用企业级密钥管理&amp;#xa;□禁止将APIKey硬编&amp;#xa;□禁止将APIKey提交&amp;#xa;□定期轮换APIKey（&amp;#xa;□按团队/项目分配合不&amp;#xa;据安全：&amp;#xa;□禁止向AI发送生产&amp;#xa;□建立敏感数据脱敏标&amp;#xa;□禁止向AI发送公司&amp;#xa;未公开财务数据）&amp;#xa;□生产代码Review必&amp;#xa;□所有AI生成的SQL&amp;#xa;本管理：&amp;#xa;□设置API用量告警（&amp;#xa;□区分任务级别的模型&amp;#xa;□月度AIAPI费用纳&amp;#xa;□鼓励高频简单任务使&amp;#xa;本控制矩阵：&amp;#xa;任务类型&amp;#xa;─────────────────────&amp;#xa;核心架构设计&amp;#xa;日常编码/CR&amp;#xa;文档注释/简单脚本&amp;#xa;自动补全触发&amp;#xa;代码审查&amp;#xa;─────────────────────&amp;#xa;预估月均成本（5人团队&amp;#xa;═════════════════════" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="220" height="826" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="══════════════&amp;#xa;业AI开发环境&amp;#xa;══════════════&amp;#xa;务（AWSSecre&amp;#xa;码在项目代码中&amp;#xa;到Git仓库&amp;#xa;议90天）&amp;#xa;同的APIKey（&amp;#xa;境的真实客户&amp;#xa;（正则替换+&amp;#xa;心商业机密（算&amp;#xa;由人工完成，A&amp;#xa;在人工审核前不&amp;#xa;每日/每周预算上&amp;#xa;用策略（见下方&amp;#xa;项目成本核算&amp;#xa;DeepSeek（成&amp;#xa;│推荐模型&amp;#xa;──────────────&amp;#xa;│Opus5&amp;#xa;│Sonnet5&amp;#xa;│DeepSeek&amp;#xa;│DeepSeek&amp;#xa;│Sonnet5&amp;#xa;──────────────&amp;#xa;）：$150~$40&amp;#xa;══════════════" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="270" y="20" width="220" height="722" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="════════════&amp;#xa;安全清单&amp;#xa;════════════&amp;#xa;sManager/&amp;#xa;于成本追踪和&amp;#xa;II（个人身份&amp;#xa;名映射）&amp;#xa;法、定价策略&amp;#xa;只能作为辅助&amp;#xa;对生产数据库&amp;#xa;限）&amp;#xa;成本控制矩阵&amp;#xa;约为Claude&amp;#xa;│预估成本&amp;#xa;────────────&amp;#xa;│~$0.50/次&amp;#xa;│~$0.10/次&amp;#xa;│~$0.01/次&amp;#xa;│~$0.001/次&amp;#xa;│~$0.05/次&amp;#xa;────────────&amp;#xa;（含合理配置&amp;#xa;════════════" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="520" y="20" width="220" height="618" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="══════════&amp;#xa;══════════&amp;#xa;ashiCorpV&amp;#xa;问题隔离）&amp;#xa;息）&amp;#xa;建议&amp;#xa;执行&amp;#xa;的1/30-1/&amp;#xa;│频率&amp;#xa;──────────&amp;#xa;│2-5次/周&amp;#xa;│20-50次/&amp;#xa;│无限制&amp;#xa;│数百次/天&amp;#xa;│10次/天&amp;#xa;──────────&amp;#xa;══════════" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="770" y="20" width="220" height="462" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

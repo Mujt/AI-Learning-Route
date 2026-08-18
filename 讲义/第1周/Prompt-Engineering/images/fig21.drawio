@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="──────────────────&amp;#xa;标准Agent&amp;#xa;──────────────────&amp;#xa;erve(观察)&amp;#xa;──────────────────&amp;#xa;当前状态:&amp;#xa;用户说了什么?&amp;#xa;上一步工具调用返回&amp;#xa;环境状态有无变化?&amp;#xa;来源:用户消息+&amp;#xa;──────────────────&amp;#xa;nk(思考)&amp;#xa;──────────────────&amp;#xa;推理过程:&amp;#xa;我是否已经拥有完成&amp;#xa;如果有缺口,我需要&amp;#xa;哪个工具可以获取这&amp;#xa;如果信息充足,最佳&amp;#xa;能力:Chain-of-Th&amp;#xa;──────────────────&amp;#xa;ide(决策)&amp;#xa;──────────────────&amp;#xa;┌──信息充足&amp;#xa;点──┤&amp;#xa;├──需要更多&amp;#xa;│&amp;#xa;└──超出能力&amp;#xa;──────────────────&amp;#xa;最终答案&amp;#xa;(执行)&amp;#xa;──────────────────&amp;#xa;果是工具调用:&amp;#xa;1.权限校验(Permi&amp;#xa;2.执行工具(API/S&amp;#xa;3.捕获结果/超时/错&amp;#xa;4.格式化工具输出&amp;#xa;果是最终答案:&amp;#xa;输出→退出循环→&amp;#xa;──────────────────&amp;#xa;dback(反馈)&amp;#xa;──────────────────&amp;#xa;具输出重新注入上下&amp;#xa;ntext+=ToolOutpu&amp;#xa;断:是否触发Compa&amp;#xa;断:是否达到max_s&amp;#xa;环继续→回到①Ob&amp;#xa;──────────────────&amp;#xa;──────────────────&amp;#xa;──────────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="220" height="1294" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="──────────────────&amp;#xa;oop(Observe→Think&amp;#xa;──────────────────&amp;#xa;──────────────────&amp;#xa;什么?&amp;#xa;文件系统/数据库/AP&amp;#xa;具输出+环境状态&amp;#xa;──────────────────&amp;#xa;──────────────────&amp;#xa;务所需的所有信息?&amp;#xa;么信息?&amp;#xa;信息?&amp;#xa;案是什么?&amp;#xa;ught(思维链)&amp;#xa;──────────────────&amp;#xa;──────────────────&amp;#xa;──→生成最终答案&amp;#xa;息?──→选择工具+&amp;#xa;权限?──→请求人工&amp;#xa;──────────────────&amp;#xa;│工具调用&amp;#xa;───────────────┐&amp;#xa;sionGate)│&amp;#xa;ell/DB/...)│&amp;#xa;误│&amp;#xa;│&amp;#xa;│&amp;#xa;回用户&amp;#xa;───────────────┘&amp;#xa;───────────────┐&amp;#xa;窗口:&amp;#xa;│&amp;#xa;│&amp;#xa;tion?│&amp;#xa;eps?│&amp;#xa;│&amp;#xa;erve&amp;#xa;───────────────┘&amp;#xa;──────────────────&amp;#xa;──────────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="270" y="20" width="220" height="1060" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

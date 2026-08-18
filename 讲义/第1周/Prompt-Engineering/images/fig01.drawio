@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="┌─────────────────────────────────────────────────────────────────────┐
+│                    AI 工程体系五层金字塔                               │
+│                    从&quot;会说话&quot;到&quot;会做事&quot;的完整技术栈                      │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│                        ┌──────────────┐                              │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="500" height="176" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="│                        │ Engineering  │     Agent流程可恢复、可审计     │
+│                        │ 图工程        │     企业流程数字化的最终形态    │
+│                        └──────┬───────┘                              │
+│                               │                                      │
+│                        ┌──────┴───────┐                              │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="236" width="500" height="150" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="│                        │ 循环工程      │     Agent的&quot;大脑&quot;如何运转      │
+│                        └──────┬───────┘                              │
+│                               │                                      │
+│                        ┌──────┴───────┐                              │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="426" width="500" height="124" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="3" target="5">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="7" value="│                        │ Engineering  │     工具注册+权限+会话+追踪     │
+│                        │ 根基工程      │     Agent的&quot;身体&quot;——能做什么    │
+│                        └──────┬───────┘                              │
+│                               │                                      │
+│                        ┌──────┴───────┐                              │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="590" width="500" height="150" as="geometry" />
+      </mxCell>
+        <mxCell id="8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="5" target="7">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="9" value="│                        │ Engineering  │     上下文设计+组装+管理        │
+│                        │ 上下文工程    │     AI&quot;看到什么、看多少、怎么看&quot; │
+│                        └──────┬───────┘                              │
+│                               │                                      │
+│                        ┌──────┴───────┐                              │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="780" width="500" height="150" as="geometry" />
+      </mxCell>
+        <mxCell id="10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="7" target="9">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="11" value="│                        │ Engineering  │     最基础、最核心的起点         │
+│                        │ 提示词工程    │     一切AI交互的入口            │
+│                        └──────────────┘                              │
+│                                                                     │
+│   关键工具定位:                                                       │
+│   Claude Code 覆盖 Context / Harness / Loop 三层，并在 Graph 层        │
+│   提供部分能力（Subagents + Hooks 隐式工作流图）                        │
+│   ChatGPT/Claude/DeepSeek 网页版运行在 Prompt Engineering 层           │
+└─────────────────────────────────────────────────────────────────────┘" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="970" width="500" height="254" as="geometry" />
+      </mxCell>
+        <mxCell id="12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="9" target="11">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

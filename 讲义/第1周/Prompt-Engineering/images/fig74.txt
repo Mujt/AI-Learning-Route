@@ -1,0 +1,23 @@
+ai_db_agent.py
+│
+├── 第一部分: 配置区
+│   ├── LLM 配置 (DeepSeek API, 可替换为 Claude)
+│   ├── DB 连接配置 (只读 + 读写 两套)
+│   └── Agent 行为配置 (temperature, max_display)
+│
+├── 第二部分: System Prompt
+│   ├── 安全规则硬约束 (禁止 DROP/TRUNCATE/ALTER)
+│   ├── 写操作确认原则
+│   ├── 数据库结构定义 (6列 + 3索引)
+│   └── 输出格式规范 (4段式)
+│
+├── 第三部分: 核心函数
+│   ├── ai_generate_sql()    → LLM 调用
+│   ├── extract_sql()        → 正则提取
+│   ├── is_write_operation() → 操作类型判断
+│   ├── execute_sql()        → 数据库执行 + 权限选择
+│   └── format_query_result()→ 结果格式化
+│
+└── 第四部分: 主交互循环
+    ├── 启动横幅
+    └── while True → 输入 → 生成 → 提取 → 确认 → 执行 → 展示

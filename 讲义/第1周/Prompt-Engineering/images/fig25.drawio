@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="-and-ExecuteL&amp;#xa;──────────────&amp;#xa;hase1:Plan(&amp;#xa;──────────────&amp;#xa;LLM分析任务&amp;#xa;Plan:&amp;#xa;1.查询sal&amp;#xa;2.按品类分&amp;#xa;3.按月份分&amp;#xa;4.生成可视&amp;#xa;5.基于数据&amp;#xa;输出:结构化&amp;#xa;hase2:Execut&amp;#xa;──────────────&amp;#xa;逐步执行Plan&amp;#xa;Step1:query&amp;#xa;Step2:group&amp;#xa;Step3:trend&amp;#xa;Step4:发现:&amp;#xa;检测到偏差→&amp;#xa;→新Plan:用&amp;#xa;Step4&apos;:生成&amp;#xa;Step5:写分析&amp;#xa;──────────────&amp;#xa;点:步骤明确、&amp;#xa;点:初始规划可&amp;#xa;表:LangGraph&amp;#xa;用:步骤明确、&amp;#xa;──────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="220" height="774" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="op:&amp;#xa;───────────────────────&amp;#xa;划)&amp;#xa;───────────────────────&amp;#xa;生成完整步骤列表:&amp;#xa;s表获取原始数据&amp;#xa;计算SUM&amp;#xa;计算趋势&amp;#xa;图表&amp;#xa;分析报告&amp;#xa;lanObject&amp;#xa;(执行)&amp;#xa;───────────────────────&amp;#xa;中的每个步骤:&amp;#xa;database→✓│&amp;#xa;by_category→✓│&amp;#xa;by_month→✓│&amp;#xa;图表库不可用→✗&amp;#xa;到Phase1重新规划&amp;#xa;字描述替代图表&amp;#xa;字版趋势描述→✓&amp;#xa;报告→✓&amp;#xa;───────────────────────&amp;#xa;可审查&amp;#xa;能不准确(计划赶不上变化&amp;#xa;Plan-and-Execute模式&amp;#xa;结构化的任务&amp;#xa;───────────────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="270" y="20" width="220" height="748" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

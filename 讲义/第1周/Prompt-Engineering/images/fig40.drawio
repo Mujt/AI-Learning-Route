@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="───────────────────────────────&amp;#xa;Context信息维度&amp;#xa;1.目标受众(Audience)&amp;#xa;-谁来消费这个输出？&amp;#xa;-他们的知识水平如何？&amp;#xa;-他们的核心关切是什么？&amp;#xa;───────────────────────────────&amp;#xa;2.使用场景(Scenario)&amp;#xa;-输出将在什么场合使用？&amp;#xa;-是正式还是非正式？&amp;#xa;-有没有替代方案？&amp;#xa;───────────────────────────────&amp;#xa;3.限制条件(Constraints)&amp;#xa;-字数/篇幅限制&amp;#xa;-预算/时间/资源限制&amp;#xa;-技术栈/合规要求&amp;#xa;───────────────────────────────&amp;#xa;4.历史信息(History)&amp;#xa;-之前尝试过什么？&amp;#xa;-已有决策/结论是什么？&amp;#xa;-避免AI给出重复/无效方案&amp;#xa;───────────────────────────────&amp;#xa;5.数据/参考资料(Reference)&amp;#xa;-需要分析的原始材料&amp;#xa;-参考范例或对标对象&amp;#xa;───────────────────────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="220" height="696" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="───────────────────────────────────┐&amp;#xa;示例&amp;#xa;&quot;目标读者是公司CEO（5分钟阅读时间）&amp;#xa;│&quot;面向初中生，语言要通俗易懂&quot;&amp;#xa;│&amp;#xa;│&amp;#xa;────────────────────────────────────&amp;#xa;&quot;用于内部技术评审会议&quot;&amp;#xa;│&quot;替代方案：社交媒体推广文案&quot;&amp;#xa;│&amp;#xa;│&amp;#xa;────────────────────────────────────&amp;#xa;&quot;预算上限50万元，工期3个月&quot;&amp;#xa;│&quot;不得引用第三方库&quot;&amp;#xa;│&quot;必须符合GDPR数据保护要求&quot;&amp;#xa;│&amp;#xa;────────────────────────────────────&amp;#xa;&quot;上一版方案因成本过高被驳回&quot;&amp;#xa;│&quot;用户已确认使用PostgreSQL数据库&quot;&amp;#xa;│&quot;此前讨论已确定采用微服务架构&quot;&amp;#xa;│&amp;#xa;────────────────────────────────────&amp;#xa;&quot;参考以下销售数据：[粘贴数据]&quot;&amp;#xa;│&quot;对标竞品为A公司和B公司的产品&quot;&amp;#xa;───────────────────────────────────┘" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="270" y="20" width="220" height="670" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="【优化前】
+第一轮 Prompt: &quot;写一个市场推广方案&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="500" height="72" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="───────────────────────────────────────────────────────────
+
+【优化后】
+第1轮 Prompt: &quot;请列出针对Z世代消费者的3种创新推广策略大纲&quot;
+  模型输出：大纲
+
+第2轮 Prompt: &quot;策略2&apos;社群裂变&apos;最有潜力，请展开为详细执行计划，
+  包含：具体步骤(5步)、所需资源、预期效果指标、风险预案&quot;
+
+第3轮 Prompt: &quot;执行计划第3步&apos;KOC筛选&apos;不够具体。
+  请补充：KOC筛选标准(5条)、触达渠道(3个)、
+  话术模板(2套)、合作报价范围&quot;
+
+第4轮 Prompt: &quot;整体方案看起来不错。请将所有内容整合为一份
+  完整的市场推广方案，用PDF-ready的格式。&quot;
+
+效果：每轮在上轮基础上深入，最终产出高质量完整方案。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="132" width="500" height="462" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

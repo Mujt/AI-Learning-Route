@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="传统工具集成&amp;#xa;每个工具独立编写适&amp;#xa;Agent───┬──工具A&amp;#xa;├──工具B集&amp;#xa;├──工具C集&amp;#xa;└──工具D集&amp;#xa;换模型≈重写全部集&amp;#xa;Agent───MCPClie&amp;#xa;(统一接口" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="220" height="254" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="MCP标准化工具接入&amp;#xa;┌──────────────────&amp;#xa;─│MCPServer:Filesys&amp;#xa;│-read_file&amp;#xa;│-write_file&amp;#xa;│-list_directory&amp;#xa;└────────────────────&amp;#xa;┌────────────────────&amp;#xa;────│MCPServer:Data&amp;#xa;│-query&amp;#xa;│-describe_schema&amp;#xa;└────────────────────&amp;#xa;┌────────────────────&amp;#xa;─│MCPServer:GitHub&amp;#xa;│-create_pr&amp;#xa;│-search_code&amp;#xa;└───────────────────&amp;#xa;统一JSON-RPCoverst&amp;#xa;工具自动发现+版本协" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="270" y="20" width="220" height="514" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

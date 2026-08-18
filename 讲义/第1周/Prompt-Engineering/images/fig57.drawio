@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="SCode→左下角齿轮图标→Settings&amp;#xa;─────────────────────────────────&amp;#xa;设置项&amp;#xa;Editor:FontSize&amp;#xa;Editor:TabSize&amp;#xa;Editor:RenderWhitespace&amp;#xa;Files:AutoSave&amp;#xa;Terminal:IntegratedFontSize&amp;#xa;Editor:Minimap&amp;#xa;─────────────────────────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="220" height="280" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="→搜索以下设&amp;#xa;────────────&amp;#xa;推荐值&amp;#xa;14-16&amp;#xa;4&amp;#xa;boundary&amp;#xa;│错误&amp;#xa;afterDelay&amp;#xa;13-14&amp;#xa;off(可选)&amp;#xa;────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="270" y="20" width="220" height="306" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="项：&amp;#xa;─────────────&amp;#xa;│原因&amp;#xa;│舒适阅读&amp;#xa;│Python标准&amp;#xa;│便于发现缩进&amp;#xa;│&amp;#xa;│防止丢失&amp;#xa;│终端可读性&amp;#xa;│减少干扰&amp;#xa;─────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="520" y="20" width="220" height="306" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

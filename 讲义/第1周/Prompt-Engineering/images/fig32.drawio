@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Streaming Events 架构:
+
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│  for event in graph.stream(input, config, stream_mode=&quot;updates&quot;):
+│      #                                                       │
+│      # 事件流输出:                                            │
+│      #                                                       │
+│      # { &quot;router&quot;: { &quot;next&quot;: &quot;research&quot; } }                  │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="500" height="254" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="│      #                                                       │
+│      # { &quot;research&quot;: { &quot;status&quot;: &quot;searching&quot;, &quot;query&quot;: &quot;...&quot; }}│" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="314" width="500" height="72" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="│      #                                                       │
+│      # { &quot;research&quot;: { &quot;status&quot;: &quot;done&quot;, &quot;results&quot;: 15 }}    │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="426" width="500" height="72" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="3" target="5">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="7" value="│      #                                                       │
+│      # { &quot;analysis&quot;: { &quot;status&quot;: &quot;analyzing&quot;, &quot;chunk&quot;: &quot;3/15&quot; }}│" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="538" width="500" height="72" as="geometry" />
+      </mxCell>
+        <mxCell id="8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="5" target="7">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="9" value="│      #                                                       │
+│      # { &quot;reviewer&quot;: { &quot;status&quot;: &quot;waiting_approval&quot; }}        │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="650" width="500" height="72" as="geometry" />
+      </mxCell>
+        <mxCell id="10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="7" target="9">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="11" value="│      #                                                       │
+│      # { &quot;execute&quot;: { &quot;status&quot;: &quot;done&quot; }}                     │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="762" width="500" height="72" as="geometry" />
+      </mxCell>
+        <mxCell id="12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="9" target="11">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="13" value="│                                                              │
+│  用户看到的 UI:                                                │
+│  ┌─────────────────────────────────────────────────────────┐ │
+│  │  任务: 竞品分析报告                                        │ │
+│  │  ✅ 路由判断 (0.1s)                                       │ │
+│  │  ✅ 搜集竞品A资料 (2.1s)                                   │ │
+│  │  ✅ 搜集竞品B资料 (1.8s)                                   │ │
+│  │  ⏳ 正在分析... (第 3/15 条)                               │ │
+│  │  ⏸️ 等待审批                                               │ │
+│  │  ⬜ 生成报告                                               │ │
+│  └─────────────────────────────────────────────────────────┘ │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="874" width="500" height="358" as="geometry" />
+      </mxCell>
+        <mxCell id="14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="11" target="13">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

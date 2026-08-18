@@ -1,0 +1,14 @@
+VSCode → Cline 面板 → 齿轮图标 → 配置界面：
+
+┌─────────────────────────────────────────────────────┐
+│ API Provider:     Anthropic                         │
+│                                                     │
+│ API Key:          sk-ant-api03-xxxxxxxxxxxxx        │
+│                   (粘贴你的 API Key)                 │
+│                                                     │
+│ Model:            Claude Sonnet 5                    │
+│                   (推荐，性价比最优)                   │
+│                                                     │
+│ Alternative:      Claude Opus 5                      │
+│                   (最强推理，复杂任务/架构设计时切换)  │
+└─────────────────────────────────────────────────────┘

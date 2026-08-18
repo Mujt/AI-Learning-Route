@@ -1,0 +1,74 @@
+01: lines 49-90 | 二、五层金字塔总览 | images/fig01.png
+02: lines 114-123 | 3.2 认知升级路径 | images/fig02.png
+03: lines 139-155 | 3.4 每一层的"升维"：从上一层到下一层解决了什么问题 | images/fig03.png
+04: lines 362-377 | 2.1.1 大语言模型的本质 | images/fig04.png
+05: lines 383-405 | 2.1.2 Prompt 如何改变输出 | images/fig05.png
+06: lines 428-454 | 2.2 核心组件体系 | images/fig06.png
+07: lines 469-492 | 组件对比：好 Prompt vs 差 Prompt | images/fig07.png
+08: lines 535-549 | 3.1.1 从 Prompt 到 Context —— 视角升级 | images/fig08.png
+09: lines 569-616 | 3.2 完整信息环境架构 | images/fig09.png
+10: lines 622-643 | 3.3 三大核心策略详解 | images/fig10.png
+11: lines 681-695 | 图 11 | images/fig11.png
+12: lines 860-884 | 4.1 两者协同关系 | images/fig12.png
+13: lines 948-1002 | 2.2 技术原理：裸 Agent Loop vs Agent Harness | images/fig13.png
+14: lines 1014-1039 | 2.3.1 Tool Registry（工具注册中心） | images/fig14.png
+15: lines 1057-1085 | 2.3.2 Permission Gate（权限门控） | images/fig15.png
+16: lines 1100-1131 | 2.3.3 Session Store（会话持久化） | images/fig16.png
+17: lines 1148-1181 | 2.3.4 Context Compaction（上下文压缩） | images/fig17.png
+18: lines 1198-1242 | 2.3.5 Hook System（钩子系统） | images/fig18.png
+19: lines 1246-1268 | 图 19 | images/fig19.png
+20: lines 1276-1296 | 2.3.6 Trace/Log（追踪与日志） | images/fig20.png
+21: lines 1377-1445 | 2.2 标准 Agent Loop 五步详解 | images/fig21.png
+22: lines 1449-1459 | 图 22 | images/fig22.png
+23: lines 1500-1508 | 2.4 Loop 范式演进 | images/fig23.png
+24: lines 1514-1540 | 2.4.1 ReAct（Reasoning + Acting）— 推理与行动交替 | images/fig24.png
+25: lines 1546-1586 | 2.4.2 Plan-and-Execute — 先完整规划，再逐步执行 | images/fig25.png
+26: lines 1592-1633 | 2.4.3 Reflexion — 执行后自我反思，存入长期记忆 | images/fig26.png
+27: lines 1639-1689 | 2.4.4 ReWOO（Reason WithOut Observation）— 一次性规划，并行执行 | images/fig27.png
+28: lines 1728-1767 | 3.2 Agent Loop vs Graph Engineering | images/fig28.png
+29: lines 1771-1875 | 3.3 六大核心概念详解 | images/fig29.png
+30: lines 1883-1919 | 3.4.1 断点续执行（Persistence） | images/fig30.png
+31: lines 1933-1969 | 3.4.2 并行扇出（Fan-out / Fan-in） | images/fig31.png
+32: lines 1983-2022 | 3.4.3 流式事件（Streaming Events） | images/fig32.png
+33: lines 2055-2103 | 四、Loop vs Graph 的关系 | images/fig33.png
+34: lines 2153-2162 | 图 34 | images/fig34.png
+35: lines 2166-2226 | 2.2 有 Prompt vs 无 Prompt 对比 | images/fig35.png
+36: lines 2230-2254 | 2.3 为什么同样模型、不同 Prompt 质量天差地别 | images/fig36.png
+37: lines 2258-2273 | 2.4 Prompt Engineering 与上下文窗口的关系 | images/fig37.png
+38: lines 2281-2298 | 3. RCTE 框架详解 | images/fig38.png
+39: lines 2308-2327 | 3.1 R (Role) — 角色设定 | images/fig39.png
+40: lines 2357-2385 | 3.2 C (Context) — 上下文信息 | images/fig40.png
+41: lines 2401-2437 | 3.3 T (Task) — 任务描述 | images/fig41.png
+42: lines 2559-2584 | 4.2 每个技巧的优化前后对比 | images/fig42.png
+43: lines 2588-2607 | 图 43 | images/fig43.png
+44: lines 2611-2634 | 图 44 | images/fig44.png
+45: lines 2638-2664 | 图 45 | images/fig45.png
+46: lines 2668-2685 | 图 46 | images/fig46.png
+47: lines 2689-2704 | 图 47 | images/fig47.png
+48: lines 2708-2730 | 图 48 | images/fig48.png
+49: lines 2734-2755 | 图 49 | images/fig49.png
+50: lines 2801-2826 | 5.2 编程类模板 | images/fig50.png
+51: lines 2876-2914 | 5.4 企业高管摘要类模板 | images/fig51.png
+52: lines 2935-2961 | 优化技巧速查决策树 | images/fig52.png
+53: lines 2969-2997 | 7.1 企业 Prompt 管理的三个层次 | images/fig53.png
+54: lines 3025-3046 | 7.3 企业 Prompt 安全红线 | images/fig54.png
+55: lines 3087-3158 | 2.1 系统架构图 | images/fig55.png
+56: lines 3174-3216 | 2.3 Cline 作为 Agent 的技术要点 | images/fig56.png
+57: lines 3246-3260 | 3.3 首次配置建议 | images/fig57.png
+58: lines 3280-3305 | 4.2 插件安装方式 | images/fig58.png
+59: lines 3313-3317 | 5.1 Cline 全局架构与配置入口 | images/fig59.png
+60: lines 3323-3332 | 5.2 配置 Claude API | images/fig60.png
+61: lines 3336-3351 | 图 61 | images/fig61.png
+62: lines 3355-3373 | 图 62 | images/fig62.png
+63: lines 3392-3409 | 图 63 | images/fig63.png
+64: lines 3413-3432 | 图 64 | images/fig64.png
+65: lines 3436-3446 | 5.4 Cline 配置完整步骤总结 | images/fig65.png
+66: lines 3456-3474 | 6.1 Continue 定位 | images/fig66.png
+67: lines 3587-3606 | 7.2 方案对比 | images/fig67.png
+68: lines 3610-3626 | 7.3 WorkBuddy 配置步骤（作为备选方案） | images/fig68.png
+69: lines 3630-3641 | 7.4 方案选择决策树 | images/fig69.png
+70: lines 3735-3765 | 9.1 企业级 AI 开发环境成熟度模型 | images/fig70.png
+71: lines 3874-3912 | 9.3 企业安全与成本管理建议 | images/fig71.png
+72: lines 3972-3997 | 1. 实操架构图 | images/fig72.png
+73: lines 4188-4206 | 5.2 三层账户体系 | images/fig73.png
+74: lines 4646-4670 | 6.3 代码架构说明 | images/fig74.png

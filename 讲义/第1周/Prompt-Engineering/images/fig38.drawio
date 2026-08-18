@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="──────────&amp;#xa;Role&amp;#xa;角色&amp;#xa;定义&amp;#xa;&quot;谁&quot;│&amp;#xa;来回答│&amp;#xa;──────────&amp;#xa;杂度递进关&amp;#xa;础版只需&amp;#xa;──────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="220" height="280" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="──────────&amp;#xa;RCTEProm&amp;#xa;Context&amp;#xa;上下文&amp;#xa;提供&amp;#xa;&quot;在哪/│&amp;#xa;什么│&amp;#xa;条件&quot;&amp;#xa;──────────&amp;#xa;R&lt;R+C&lt;&amp;#xa;完整版四要&amp;#xa;──────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="270" y="20" width="220" height="332" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="──────────&amp;#xa;架&amp;#xa;Task&amp;#xa;任务&amp;#xa;描述&amp;#xa;&quot;做什么&quot;│&amp;#xa;│&amp;#xa;──────────&amp;#xa;&lt;R+C+T+E&amp;#xa;。&amp;#xa;──────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="520" y="20" width="220" height="306" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="──────────&amp;#xa;Example&amp;#xa;示例&amp;#xa;展示&amp;#xa;&quot;做成│&amp;#xa;什么样&quot;│&amp;#xa;──────────&amp;#xa;──────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="770" y="20" width="220" height="228" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

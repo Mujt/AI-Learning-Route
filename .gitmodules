@@ -1,0 +1,12 @@
+# [submodule Agent-Learning-Hub]
+#    path = Agent-Learning-Hub
+#    url = git@github.com:datawhalechina/Agent-Learning-Hub.git
+# [submodule ai_learn_project]
+#    path = ai_learn_project
+#    url = git@github.com:Earth-OL-Player/ai_learn_project.git
+# [submodule AI-Coding-Guide-Zh]
+#    path = AI-Coding-Guide-Zh
+#    url = git@github.com:KimYx0207/AI-Coding-Guide-Zh.git
+# [submodule learningai]
+#    path = learningai
+#    url = git@github.com:JackBlogs/learningai.git

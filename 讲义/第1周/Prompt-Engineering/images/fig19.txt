@@ -1,0 +1,21 @@
+┌──────────────────────────────────────────────────┐
+│                  Hook Manager                     │
+│                                                  │
+│  hooks: [                                         │
+│    {                                              │
+│      "event": "PreToolUse",                       │
+│      "matcher": "Bash",                           │
+│      "command": "python audit.py",                │
+│      "timeout": 5000                              │
+│    },                                             │
+│    {                                              │
+│      "event": "PostToolUse",                      │
+│      "matcher": "Write|Edit",                     │
+│      "command": "npx prettier --check ${file}"    │
+│    }                                              │
+│  ]                                                │
+│                                                  │
+│  匹配逻辑: event 匹配 + matcher 正则 → 执行 command   │
+│  超时保护: 每个 hook 最长执行 timeout 毫秒            │
+│  错误处理: hook 失败 → 可配置 [阻塞/告警/忽略]         │
+└──────────────────────────────────────────────────┘

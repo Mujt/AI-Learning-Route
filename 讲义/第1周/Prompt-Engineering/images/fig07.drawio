@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="┌─────────────────────────────────────────────────────────────────┐
+│ 差 Prompt（缺少大部分组件）：                                      │
+│                                                                 │
+│   &quot;帮我写个方案&quot;                                                  │
+│                                                                 │
+│   缺失: Role ❌ | Context ❌ | Task (模糊) ⚠️ |                    │
+│         Format ❌ | Constraints ❌ | Examples ❌                   │
+│                                                                 │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="500" height="228" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="├─────────────────────────────────────────────────────────────────┤
+│ 好 Prompt（六组件齐全）：                                          │
+│                                                                 │
+│   Role:        你是一位资深建筑设计师                              │
+│   Context:     我要在大学城旁开一个面向学生的现代风格咖啡馆           │
+│                面积200平米，预算50万                               │
+│   Task:        请为我设计一份完整的咖啡馆方案                        │
+│   Format:      包括：1.空间布局 2.设计风格 3.材料选择 4.灯光设计      │
+│   Constraints: 控制在2000字以内，使用中文专业术语                    │
+│   Examples:    参考Manner Coffee的简约工业风                       │
+│                                                                 │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="288" width="500" height="306" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="└─────────────────────────────────────────────────────────────────┘" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="634" width="500" height="50" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="3" target="5">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,8 @@
+1. 浏览器打开 https://console.anthropic.com
+2. 注册/登录 Anthropic 账号
+3. 进入 Dashboard → API Keys → Create Key
+4. 输入 Key 名称（如 "cline-vscode"）
+5. 复制生成的 sk-ant-api03-xxx... 密钥
+   ⚠️ 此密钥仅显示一次，务必安全保存
+6. 充值：进入 Billing 页面，绑定信用卡或使用预付费额度
+   建议初始充值 $25（约 180 元人民币）

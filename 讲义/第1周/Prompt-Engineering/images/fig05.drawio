@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="┌─────────────────────────────────────────────────────────────────┐
+│              Prompt 约束机制 —— 对比实验                           │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  无 Prompt（纯续写模式）：                                        │
+│    输入：&quot;人工智能的未来&quot;                                          │
+│    模型行为：从训练数据中找到&quot;人工智能的未来&quot;后最常见的续写           │
+│    输出：&quot;将会非常美好，人类将与机器和谐共处...&quot;                     │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="500" height="228" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="│                                                                 │
+│  有 Prompt（精准引导模式）：                                       │
+│    输入：&quot;请用200字，从三个维度（技术/商业/社会）分析                │
+│           人工智能的未来。格式：每段用标题开头。&quot;                     │
+│    模型行为：受到&quot;200字&quot;+&quot;三个维度&quot;+&quot;标题格式&quot;三重约束              │
+│    输出：                                                       │
+│    技术维度：大模型参数规模持续增长...                              │
+│    商业维度：AI原生应用重塑企业运营...                              │
+│    社会维度：人机协作成为新常态...                                  │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="288" width="500" height="254" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="│                                                                 │
+└─────────────────────────────────────────────────────────────────┘" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="582" width="500" height="72" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="3" target="5">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

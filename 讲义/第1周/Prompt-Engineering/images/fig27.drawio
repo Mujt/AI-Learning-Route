@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="OLoop:&amp;#xa;──────────────&amp;#xa;统ReAct(6次&amp;#xa;LM(Think1)→T&amp;#xa;行,总耗时=&amp;#xa;──────────────&amp;#xa;eWOO(2次LLM&amp;#xa;1次LLM:生&amp;#xa;──────────────&amp;#xa;Plan:&amp;#xa;#E1=query&amp;#xa;#E2=fetch&amp;#xa;#E3=read_&amp;#xa;依赖分析:#E&amp;#xa;──────────────&amp;#xa;并行执行(同时&amp;#xa;┌─────────┐&amp;#xa;│#E1│&amp;#xa;│数据库│&amp;#xa;│查询│&amp;#xa;└────┬────┘&amp;#xa;│&amp;#xa;└──────&amp;#xa;──────────────&amp;#xa;2次LLM:基&amp;#xa;耗时=2×LL&amp;#xa;oken消耗远低于&amp;#xa;点:省钱(LLM&amp;#xa;点:工具调用间&amp;#xa;如果初始规&amp;#xa;表:smolagent&amp;#xa;用:工具调用间&amp;#xa;──────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="220" height="878" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="─────────────────────────────&amp;#xa;LLM调用):&amp;#xa;ol1→LLM(Think2)→Tool2→.&amp;#xa;×LLM延迟+工具总耗时&amp;#xa;─────────────────────────────&amp;#xa;调用):&amp;#xa;完整执行计划&amp;#xa;─────────────────────────────&amp;#xa;database(&quot;SELECT*...&quot;)&amp;#xa;api(&quot;https://api.market...&quot;)&amp;#xa;ile(&quot;/docs/sales_report.md&quot;)&amp;#xa;,#E2,#E3互不依赖→可并行&amp;#xa;─────────────────────────────&amp;#xa;触发3个工具):&amp;#xa;┌─────────┐┌─────────┐&amp;#xa;│#E2││#E3│&amp;#xa;│API调用││文件读取│&amp;#xa;││││&amp;#xa;└────┬────┘└────┬────┘&amp;#xa;││&amp;#xa;─────┼────────────┘&amp;#xa;▼&amp;#xa;集所有结果&amp;#xa;─────────────────────────────&amp;#xa;所有工具结果一次性生成最终答&amp;#xa;延迟+max(工具耗时)并行执行&amp;#xa;ReAct&amp;#xa;调用少)、提速(并行执行)&amp;#xa;有依赖时无法使用;&amp;#xa;划错误,无法中途调整&amp;#xa;CodeAgent&amp;#xa;无依赖关系,且步骤可预见的场景&amp;#xa;─────────────────────────────" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="270" y="20" width="220" height="878" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="┌────────────────────────────────────────────────────────────┐
+│                     分层压缩优先级                             │
+│                                                            │
+│  第 1 优先保留区 (永不压缩):                                  │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │ System Prompt (角色+核心规则)                          │  │
+│  │ 当前任务描述                                           │  │
+│  │ 最近的 2-3 轮对话                                     │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                            │
+│  第 2 层 — 轻度压缩 (提取摘要 + 保留关键数据):                  │
+│  ┌──────────────────────────────────────────────────────┐  │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="500" height="332" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="│  │                       关键: avg_price=¥1,250,          │  │
+│  │                       总记录=350条&quot;                     │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                            │
+│  第 3 层 — 中度压缩 (保留决策链，丢弃中间推理):                  │
+│  ┌──────────────────────────────────────────────────────┐  │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="392" width="500" height="176" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="2" target="3">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="5" value="│  │                   1. 数据源为MySQL sales表              │  │
+│  │                   2. 分析维度为按月+按品类               │  │
+│  │                   3. CEO受众, 需要可视化建议&quot;            │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                            │
+│  第 4 层 — 激进压缩 (可丢弃，需要时重新检索):                   │
+│  ┌──────────────────────────────────────────────────────┐  │" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="608" width="500" height="202" as="geometry" />
+      </mxCell>
+        <mxCell id="6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="3" target="5">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+        <mxCell id="7" value="│  │                             原对话可完全丢弃             │  │
+│  └──────────────────────────────────────────────────────┘  │
+│                                                            │
+└────────────────────────────────────────────────────────────┘" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="850" width="500" height="124" as="geometry" />
+      </mxCell>
+        <mxCell id="8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="5" target="7">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

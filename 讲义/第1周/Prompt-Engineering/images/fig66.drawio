@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="26.0.0">
+  <diagram name="page1">
+    <mxGraphModel dx="900" dy="700" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="───────────────────&amp;#xa;对比维度&amp;#xa;核心定位&amp;#xa;文件操作&amp;#xa;终端操作&amp;#xa;多模型切换&amp;#xa;代码补全&amp;#xa;开源许可&amp;#xa;学习成本&amp;#xa;适合角色&amp;#xa;───────────────────&amp;#xa;用建议：&amp;#xa;Cline(主力)+Con&amp;#xa;日常小任务用Conti" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="20" y="20" width="220" height="384" as="geometry" />
+      </mxCell>
+        <mxCell id="3" value="──────────────────────────&amp;#xa;Cline&amp;#xa;AIAgent（自主执行任务）&amp;#xa;可读/写/搜索项目文件&amp;#xa;可执行终端命令&amp;#xa;手动切换Provider&amp;#xa;无&amp;#xa;Apache2.0&amp;#xa;中&amp;#xa;主力编码Agent&amp;#xa;──────────────────────────&amp;#xa;inue(辅助)组合安装，互补&amp;#xa;ue快速问答，大任务用Clin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="270" y="20" width="220" height="358" as="geometry" />
+      </mxCell>
+        <mxCell id="4" value="──────────────────┐&amp;#xa;Continue&amp;#xa;│AI助手（对话+补全&amp;#xa;读当前文件/选区&amp;#xa;│不可执行终端&amp;#xa;│对话中随时切换&amp;#xa;│Tab键补全&amp;#xa;│Apache2.0&amp;#xa;│低&amp;#xa;│日常编程助手+&amp;#xa;│多模型对比使用&amp;#xa;──────────────────┘&amp;#xa;非互斥。&amp;#xa;自主执行。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;spacing=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+        <mxGeometry x="520" y="20" width="220" height="384" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
