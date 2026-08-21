@@ -331,15 +331,19 @@ MCP（Model Context Protocol，模型上下文协议）是一套**标准协议**
 └─────────────┘                      └──────────────────┘
 ```
 
-五个核心概念（记不住没关系，先混个脸熟）：
+核心概念（记不住没关系，先混个脸熟）：
 
 | 概念 | 是什么 | 类比 |
 | --- | --- | --- |
-| **Client** | AI 客户端，发起调用的那一方 | 用 USB 设备的主机 |
+| **Host** | 你正在用的 AI 应用（Claude Desktop、IDE 插件、自建 Agent） | 用 USB 设备的人 |
+| **Client** | Host 内部的协议组件，负责和 Server 对话（一个 Host 可连多个 Server） | 设备上的 USB 接口 |
 | **Server** | 你开发的工具服务进程 | 插在电脑上的 USB 设备 |
-| **Tool** | Server 暴露给 AI 调用的具体函数 | 设备的功能按钮 |
-| **Resource** | Server 暴露给 AI 读的数据/文件 | 设备里的数据 |
-| **Transport** | 通信方式（stdio / HTTP SSE） | USB 线还是无线 |
+| **Tool** | Server 暴露给 AI 调用的具体函数（执行动作） | 设备的功能按钮 |
+| **Resource** | Server 暴露给 AI 读的数据/文件（只读上下文） | 设备里的数据 |
+| **Prompt** | 可复用的提示词模板（给 AI 的固定套路） | 设备的快捷设置 |
+| **Transport** | 通信方式（stdio / Streamable HTTP） | USB 线还是无线 |
+
+> 注意：严格来说，**MCP 是 Client 与 Server 之间的通信协议**——Host（AI 应用）负责承载交互与模型调用，Client 负责和 Server 说话，Server 负责把能力暴露出来。完整链路在 6.7 展开。
 
 ### 6.2 最小 MCP Server（热身：会"加法和打招呼"的服务器）
 
@@ -499,6 +503,148 @@ AI 会自动调用 `add_todo` 再调用 `list_todos`，你就能看到结果—�
 | **参数类型不明确** | 缺类型注解，schema 生成错误 | 用 `text: str`、`index: int` 标注 |
 | **stdio 与 SSE 混淆** | 本地调试用 stdio，远程服务才用 SSE | 默认 stdio 即可 |
 | **忘记持久化** | 数据只存内存，重启就丢 | 需要保留就用文件/数据库 |
+
+### 6.7 深入：MCP 的完整架构（Host / Client / Server）
+
+上面我们只用了"Client ↔ Server"。真实世界里还有一个常被忽略的角色：**Host**。
+
+| 角色 | 说明 |
+| --- | --- |
+| **Host** | 用户使用的 AI 应用（Claude Desktop、Cursor、IDE 插件、自建 Agent 平台） |
+| **Client** | 位于 Host 内部，负责与 Server 建立会话、交换协议消息；**一个 Host 可连多个 Server** |
+| **Server** | 开发者主要编写的部分，把文件读取、SQL 查询、GitHub 查询等能力暴露给 Host |
+
+> **关键区分**：MCP 协议只发生在 **Client 和 Server** 之间。Host 是"用的人"，Client 是"传话的"，Server 是"干活的"。Server 背后的数据源（本地文件、数据库、第三方 API）不属于协议角色。
+
+**一次 MCP 调用的完整流程**：
+
+```
+模型发现自己缺数据（如 Git 日志）→ 生成工具调用
+        │
+        ▼
+Host 把调用交给 MCP Client
+        │
+        ▼
+Client 通过 JSON-RPC 请求 Server
+        │
+        ▼
+Server 执行查询，结果沿原路径返回
+        │
+        ▼
+模型据此组织回答
+```
+
+**初始化握手（最容易忽略）**：正式调用工具前，Client 和 Server 先"互相认识"——
+
+1. Client 发 `initialize` 请求（带上自己支持的协议版本、能力列表）；
+2. Server 返回自己支持的版本、能力、基础信息；
+3. Client 再发 `initialized` 通知，双方进入可用状态。
+
+> 排查"Server 配好了但工具没出现"时，**先看初始化阶段是否失败**——协议版本不匹配、SDK 版本不一致是最常见原因。
+
+**Server 能暴露三类东西**（凉拌黄瓜比喻）：
+
+| 能力 | 是什么 | 比喻 |
+| --- | --- | --- |
+| **Tools** | 执行动作（查询、发送、创建、修改） | 切菜、拌料、开火 |
+| **Resources** | 只读上下文（文件、日志片段、数据库 Schema） | 冰箱里有什么食材 |
+| **Prompts** | 可复用的提示词模板（如"按团队规范做代码审查"） | 家里的固定口味偏好（少放辣、必放香菜） |
+
+> 大多数 Server **先只提供 Tools 就够了**；需要只读上下文或固定套路时再加 Resources、Prompts。另外还有三个更高级的 **Client 侧能力**，了解即可（取决于客户端是否实现）：**Roots**（Host 告诉 Server"允许在哪些目录内工作"）、**Sampling**（Server 请 Host 的模型帮忙生成一段内容）、**Elicitation**（Server 执行中回头向用户补充询问信息）。
+
+### 6.8 深入：MCP 的底层协议与通信方式
+
+**为什么用 JSON-RPC 2.0？**
+
+- REST 偏"资源"（`/users/1`、`/orders/100`）；
+- JSON-RPC 偏"方法调用"（`tools/call`、`resources/read`）；
+- AI 工具调用天然是"我要执行某个动作"，所以 JSON-RPC 更贴合。
+
+请求示例：
+
+```json
+{
+  "jsonrpc": "2.0",
+  "method": "tools/call",
+  "params": {
+    "name": "read_file",
+    "arguments": { "path": "/path/to/file.txt" }
+  },
+  "id": 1
+}
+```
+
+成功响应只返回 `result`，失败响应才返回 `error`（**不要在成功响应里再塞 `error: null`**）：
+
+```json
+{ "jsonrpc": "2.0", "id": 1, "result": { "content": [ { "type": "text", "text": "文件内容..." } ] } }
+```
+
+> 工具参数用 JSON Schema 描述——它既是运行时校验规则，也是给模型的"说明书"。
+
+**两种通信方式**：
+
+| 方式 | 特点 | 适合 |
+| --- | --- | --- |
+| **stdio** | Server 作为子进程启动，通过 stdin/stdout 交换消息；无网络部署成本 | 本地工具、个人使用（默认推荐） |
+| **Streamable HTTP** | 统一端点（`POST /mcp`），认证、负载均衡可沿用普通 HTTP 运维 | 团队服务、远程 API、多用户访问 |
+
+> ⚠️ **stdio 模式最大的坑**：stdout 是协议消息通道，**不能拿来打印调试日志**！一行 `print()` 就可能破坏消息格式。调试日志请写到 stderr 或文件。
+>
+> 协议版本在持续演进（当前稳定版为 2025-11-25 revision），接入前确认协议 revision 与 SDK 版本即可。
+
+### 6.9 生产级 MCP：工具设计、安全与运维（进阶）
+
+办公自动化场景下，AI 要操作你的文件、数据甚至发消息——**安全不能靠"相信模型"**。把 Server 做进生产环境，至少注意四件事：
+
+**① 工具设计：避免"万能工具"**
+
+❌ 反面（操作范围和权限都丢给模型猜）：
+
+```python
+execute_sql(sql)                    # 模型想执行什么 SQL 都行
+file_operation(op, path, data)      # 读写删改一把梭
+call_api(url, method, body)         # 任意 URL 随便请求
+```
+
+✅ 正面（按业务动作拆分，权限和校验落在每个具体工具上）：
+
+```python
+get_user_by_id(id)                  # 只查一个用户
+list_active_orders(user_id)         # 只列订单
+read_file(path)                     # 只读
+write_report(path, content)         # 只写报告
+```
+
+- 工具名用"**动词 + 名词**"；
+- `description` 写清适用条件、必填参数和**禁用场景**；
+- 大文件：单个 chunk 约 100KB，超过 10MB 只返回说明和可选读取方式，别让模型一次吃整个文件。
+
+**② 权限与安全清单**：
+
+| 检查项 | 要求 |
+| --- | --- |
+| 路径遍历 | 读文件前做路径规范化，禁止 `../` 越出允许目录 |
+| SQL 注入 | 用参数化语句，绝不把模型生成的字符串直接执行 |
+| 数据脱敏 | 手机号、邮箱、Token、密钥等返回前脱敏 |
+| 写操作 | 删除/修改/发送默认收紧权限，设人工确认 + 审计 |
+| 第三方 Server | 接入前审核源码、依赖和权限 |
+
+**③ 可观测性**：每次请求有 Trace ID；工具调用的参数、耗时、结果、错误码有结构化日志；能还原"Agent 回答背后调用过哪些工具"；有超时、限流、熔断、重试。
+
+**④ 成本归因与依赖治理**：每次调用能关联到用户/业务线/工具/会话；Token 与 API 成本可拆分统计；有配额与预算告警；模型循环调用工具要有次数上限；SDK/第三方库/第三方 Server 要有维护者和更新记录。
+
+> **一句话**：MCP 只改变了"工具的接入方式"，**不会替代鉴权、审计、日志、版本、限流**——这些和普通后端服务没有本质区别。
+
+### 6.10 本节小结：MCP 到底解决了什么？
+
+把 JavaGuide 的总结翻译成一句话：
+
+> **MCP 解决的是"外部工具和数据源如何接入 AI"这件事**。它让同一个工具（如 Git、数据库、WPS 桥接层）写一次，任何支持 MCP 的 Host 都能发现并调用——这就是"接入一次、处处可用"。
+>
+> 但 MCP **不负责**：模型怎么决定调用（Function Calling）、任务怎么编排（Agent）、请求是否被授权（业务安全）。这三件事各有各的层。
+
+**进阶阅读**：JavaGuide《什么是 Model Context Protocol (MCP)？和 Function Calling、Agent 什么关系？》→ https://javaguide.cn/ai/agent/mcp.html
 
 ---
 
@@ -791,6 +937,7 @@ WPS 用的是 COM 接口，但"通道"不止这一种。按**稳定性与工程�
 3. **（思考）**：对比 Skill 和 MCP，回答——"生成会议纪要"这个需求，你会做成 Skill 还是 MCP？为什么？写 100 字。
 4. **（必做·思考）**：阅读《补充知识/WPS技术文档.md》和《补充知识/Excel-Agent可视化操作工具开发文档.md》，回答——"仅用 Skills 和 MCPs 能否完成 WPS 自动化？还缺什么组件？后端层（backend.py）的作用是什么？"写 100 字。
 5. **（选做）**：调研 OpenClaw（龙虾）的官方文档，找出它"定时任务（Cron）+ 技能"的具体配置示例，截图记录。
+6. **（选做）**：阅读 JavaGuide 的 MCP 文章（https://javaguide.cn/ai/agent/mcp.html），用一句话分别回答：MCP 解决了什么？MCP 不解决什么？再对照 6.9，说出"万能工具（execute_sql）"有什么风险。
 
 ---
 
